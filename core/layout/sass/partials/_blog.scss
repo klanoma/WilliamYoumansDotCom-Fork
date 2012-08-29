@@ -1,0 +1,167 @@
+
+/* Blog */
+
+#main .pageNavigation {
+  font-size: 11px;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.pageNavigation:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ie6 .pageNavigation, .ie7 .pageNavigation { zoom: 1; }
+
+.pageNavigation .previousLink {
+  float: left !important;
+  width: 48%;
+  text-align: left;
+}
+
+.pageNavigation .nextLink {
+  float: right !important;
+  width: 48%;
+  text-align: right;
+}
+
+.comment {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.comment:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.ie6 .comment, .ie7 .comment { zoom: 1; }
+
+.comment .imageHolder {
+  float: left;
+  padding: 0 12px 10px 0;
+  width: 48px;
+  height: 48px;
+}
+
+.comment .imageHolder a {
+  border: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.comment .commentContent {
+  float: left;
+}
+
+.col-2 .comment .commentContent { width: 80px; }
+.col-3 .comment .commentContent { width: 160px; }
+.col-4 .comment .commentContent { width: 240px; }
+.col-5 .comment .commentContent { width: 320px; }
+.col-6 .comment .commentContent { width: 400px; }
+.col-7 .comment .commentContent { width: 480px; }
+.col-8 .comment .commentContent { width: 560px; }
+.col-9 .comment .commentContent { width: 640px; }
+.col-10 .comment .commentContent { width: 720px; }
+.col-11 .comment .commentContent { width: 800px; }
+.col-12 .comment .commentContent { width: 880px; }
+
+/* Pagination */
+
+#main .pagination {
+  width: 100%;
+  overflow: hidden;
+  border: 0;
+  padding-top: 20px;
+}
+
+.ie6 #main .pagination {
+  width: auto;
+}
+
+.pagination header {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  text-indent: -9999px;
+}
+
+.pagination .bd {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+.ie6 .pagination .bd {
+  position: static;
+}
+
+.pagination ul {
+  padding: 0 0 12px 0;
+  overflow: hidden;
+  position: relative;
+  left: -50%;
+}
+
+.ie6 .pagination ul {
+  position: static;
+}
+
+.pagination li {
+  float: left;
+  margin: 0 4px 0 0;
+  line-height: 15px;
+  font-size: 12px;
+  font-size: 11px;
+  line-height: 1.636;
+  text-align: center;
+}
+
+.pagination li.previousPage span,
+.pagination li.nextPage span {
+  float: left;
+  padding: 5px 8px;
+  min-width: 12px;
+  border: 1px solid #d8d8d8;
+  background: #ebebeb;
+  color: #666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.pagination li.currentPage span {
+  float: left;
+  padding: 5px 8px;
+  min-width: 12px;
+  border: 1px solid #d8d8d8;
+  background: #ebebeb;
+  font-weight: 700;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.pagination li.ellipsis span {
+  float: left;
+  padding: 6px 4px 4px 4px;
+  min-width: 12px;
+  color: #666;
+}
+
+.pagination li a:active {
+  position: relative;
+  top: 1px;
+}
+
+.pagination li a {
+  float: left;
+  padding: 5px 8px;
+  min-width: 12px;
+  border: 1px solid #d8d8d8;
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
