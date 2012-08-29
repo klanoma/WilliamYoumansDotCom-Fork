@@ -1,0 +1,12 @@
+#mac ignores
+:2e*
+._*
+*~
+.AppleDouble*
+.DS_*
+-.save
+.com.apple.timemachine*
+
+#Compass & RVM
+.rvmrc
+.sass-cache/*
