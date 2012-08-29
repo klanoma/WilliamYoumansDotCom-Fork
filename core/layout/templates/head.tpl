@@ -5,26 +5,28 @@
 <!--[if IE 9 ]> <html lang="{$LANGUAGE}" class="ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="{$LANGUAGE}"> <!--<![endif]-->
 <head>
-	{* Meta *}
-	<meta charset="utf-8" />
-	<meta name="generator" content="Fork CMS" />
-	{$meta}
-	{$metaCustom}
+  {* Meta *}
+  <meta charset="utf-8" />
+  <meta name="author" content="William Youmans" />
+  <meta name="publisher" content="William Youmans" />
+  <meta name="robots" content="index, follow" />
+  {$meta}
+  {$metaCustom}
 
-	<title>{$pageTitle}</title>
+  <title>{$pageTitle}</title>
 
-	{* Favicon and Apple touch icon *}
-	<link rel="shortcut icon" href="{$THEME_URL}/favicon.ico" />
-	<link rel="apple-touch-icon" href="{$THEME_URL}/apple-touch-icon.png" />
+  {* Favicon and Apple touch icon *}
+  <link rel="shortcut icon" href="{$THEME_URL}/favicon.ico" />
+  <link rel="apple-touch-icon" href="{$THEME_URL}/apple-touch-icon.png" />
 
-	{* Stylesheets *}
-	{iteration:cssFiles}
-		<link rel="stylesheet" href="{$cssFiles.file}" />
-	{/iteration:cssFiles}
+  {* Stylesheets *}
+  {iteration:cssFiles}
+    <link rel="stylesheet" href="{$cssFiles.file}" />
+  {/iteration:cssFiles}
 
-	{* HTML5 Javascript *}
-	<!--[if lt IE 9]> <script src="{$THEME_URL}/core/js/html5.js"></script> <![endif]-->
+  {* HTML5 Javascript *}
+  <!--[if lt IE 9]> <script src="{$THEME_URL}/core/js/html5.js"></script> <![endif]-->
 
-	{* Site wide HTML *}
-	{$siteHTMLHeader}
+  {* Site wide HTML *}
+  {$siteHTMLHeader}
 </head>
