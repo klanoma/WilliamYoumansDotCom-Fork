@@ -28,21 +28,12 @@ h4 {
   line-height: 1;
   font-weight: 300;
   color: #1c4f6f;
-}
-
-  h1 a,
-  h2 a,
-  h3 a,
-  h4 a {
+  a {
     border: 0;
   }
-
-h1 {
-  font-size: 42px;
-  padding: 0 0 12px 0;
 }
 
-h2 {
+h1, h2 {
   font-size: 42px;
   padding: 0 0 12px 0;
 }
@@ -63,23 +54,20 @@ a {
   text-decoration: none;
   border-bottom: 1px solid #abdaee;
   color: #018fcc;
-}
-
-a:link {
-  border-color: #b6d5e9;
-  color: #2081bb;
-}
-
-a:visited {
-  border-color: #b4d0e0;
-  color: #1b70a1;
-}
-
-a:hover,
-a:active,
-a:focus {
-  border-color: #ef4d03;
-  color: #ef4d03;
+  &:link {
+    border-color: #b6d5e9;
+    color: #2081bb;
+  }
+  &:visited {
+    border-color: #b4d0e0;
+    color: #1b70a1;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: #ef4d03;
+    color: #ef4d03;
+  }
 }
 
 /* Defaults */
