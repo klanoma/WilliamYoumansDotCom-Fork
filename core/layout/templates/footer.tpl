@@ -18,3 +18,17 @@
     </nav>
   </div>
 </footer>
+
+{* General Javascript *}
+{iteration:jsFiles}
+  <script src="{$jsFiles.file}"></script>
+{/iteration:jsFiles}
+
+{* Theme specific Javascript *}
+<script src="{$THEME_URL}/core/js/bootstrap.min.js"></script>
+<script src="{$THEME_URL}/core/js/jquery.isotope.min.js"></script>
+<script src="{$THEME_URL}/core/js/jquery.touchSwipe.js"></script>
+<script src="{$THEME_URL}/core/js/functions.js"></script>
+
+{* Site wide HTML *}
+{$siteHTMLFooter}

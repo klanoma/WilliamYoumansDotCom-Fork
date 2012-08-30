@@ -122,14 +122,6 @@
     {include:core/layout/templates/footer.tpl}
   </div>
 
-  {* General Javascript *}
-  {iteration:jsFiles}
-    <script src="{$jsFiles.file}"></script>
-  {/iteration:jsFiles}
-
-  {* Theme specific Javascript *}
-  <script src="{$THEME_URL}/core/js/triton.js"></script>
-
   {* Site wide HTML *}
   {$siteHTMLFooter}
 </body>
