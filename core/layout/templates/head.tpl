@@ -23,9 +23,9 @@
   {iteration:cssFiles}
     <link rel="stylesheet" href="{$cssFiles.file}" />
   {/iteration:cssFiles}
+  <!--[if lt IE 8]> <link rel="stylesheet" href="{$THEME_URL}/core/layout/css/ie7.css" /> <![endif]-->
 
   {* HTML5 Javascript *}
-  <!--[if lt IE 9]> <script src="{$THEME_URL}/core/js/html5.js"></script> <![endif]-->
   <!--[if lt IE 9]> <script src="{$THEME_URL}/core/js/html5.js"></script> <![endif]-->
 
   {* Site wide HTML *}
