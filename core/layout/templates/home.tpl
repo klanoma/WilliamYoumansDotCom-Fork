@@ -37,19 +37,6 @@
           <h4>{$lblBreadcrumb|ucfirst}</h4>
           {include:core/layout/templates/breadcrumb.tpl}
         </div>
-
-        {* Advertisement position *}
-        {iteration:positionAdvertisement}
-          {option:positionAdvertisement.blockIsHTML}
-            <div id="headerAd">
-              {$positionAdvertisement.blockContent}
-            </div>
-          {/option:positionAdvertisement.blockIsHTML}
-          {option:!positionAdvertisement.blockIsHTML}
-            {$positionAdvertisement.blockContent}
-          {/option:!positionAdvertisement.blockIsHTML}
-        {/iteration:positionAdvertisement}
-
       </div>
 
     </header>
