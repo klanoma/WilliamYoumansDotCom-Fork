@@ -29,12 +29,9 @@
             <a href="http://www.last.fm/gotwilly" title="Follow us on Last.fm" class="icon-lastfm" target="_blank"></a>
           </div>
           <div class="span4">
-            <h3>Newsletter</h3>
-            <p>Subscribe to our monthly newsletter and be the first to know about our news and special deals!</p>
-            <form>
-              <input type="text" placeholder="Enter your E-mail" />
-              <input type="submit" class="btn" value="Ok" />
-            </form>
+            <h3>Recent posts</h3>
+            <p>See what's going on</p>
+
           </div>
         </div> <!-- /row -->
       </div> <!-- /container -->
