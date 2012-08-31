@@ -2174,5 +2174,3 @@ ul.the-icons { margin: 0; }
 ul.the-icons li { display: inline; padding: 10px 20px; margin: 0; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
 
 ul.the-icons li:hover { background: #eee; }
-
-/* @import "partials/typography"; @import "partials/layout"; @import "partials/generic"; @import "partials/header"; @import "partials/footer"; @import "partials/forms"; @import "partials/blog"; */
