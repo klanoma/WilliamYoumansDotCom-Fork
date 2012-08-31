@@ -37,3 +37,4 @@
   {* Site wide HTML *}
   {$siteHTMLHeader}
 </head>
+<body class="{$LANGUAGE}" itemscope itemtype="http://schema.org/WebPage">

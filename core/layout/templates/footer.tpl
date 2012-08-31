@@ -32,3 +32,5 @@
 
 {* Site wide HTML *}
 {$siteHTMLFooter}
+</body>
+</html>
