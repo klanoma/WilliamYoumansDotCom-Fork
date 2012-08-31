@@ -51,9 +51,6 @@
     {* Breadcrumb *}
     {include:core/layout/templates/breadcrumb.tpl}
 
-    {* Navigation *}
-    {$var|getnavigation:'page':0:1}
-
     {* Language *}
     {include:core/layout/templates/languages.tpl}
 
