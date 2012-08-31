@@ -9,15 +9,15 @@
   <div class="carousel-inner">
     <div class="active item">
       <h1 style="width:950px;position:absolute;top:20px;text-align:center;left:50%;margin-left:-480px;line-height:1.2em;font-weight:800;color:#fff;font-size:120px;">I BUILD WEBSITES</h1>
-      <img src="{$THEME_URL}/core/layout/images/home/city.jpg" />
+      <img src="{$THEME_URL}/core/layout/images/home/mountains.jpg" />
     </div>
     <div class="item">
       <h1 style="width:950px;position:absolute;top:20px;text-align:center;left:50%;margin-left:-480px;line-height:1.2em;font-weight:800;color:#fff;font-size:120px;">I BUILD WEBSITES</h1>
-      <img src="{$THEME_URL}/core/layout/images/home/city.jpg" />
+      <img src="{$THEME_URL}/core/layout/images/home/mountains.jpg" />
     </div>
     <div class="item">
       <h1 style="width:950px;position:absolute;top:20px;text-align:center;left:50%;margin-left:-480px;line-height:1.2em;font-weight:800;color:#fff;font-size:120px;">I BUILD WEBSITES</h1>
-      <img src="{$THEME_URL}/core/layout/images/home/city.jpg" />
+      <img src="{$THEME_URL}/core/layout/images/home/mountains.jpg" />
     </div>
   </div>
   <!-- Carousel navigation -->
