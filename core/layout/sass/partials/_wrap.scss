@@ -105,6 +105,12 @@ footer {
         background:#DE2C6C
       }
     }
+    .icon-lastfm {
+      border:3px solid #DF1C00;
+      &:hover {
+        background:#DF1C00;
+      }
+    }
     .icon-twitter {
       border:3px solid #31CDFD;
       &:hover {
@@ -174,9 +180,9 @@ footer {
     color:#222;
   }
   .nav > li.active > a {
-    background-image:url(../img/navbar-active-item.png);
-    background-position:center bottom;
-    background-repeat:no-repeat;
+    background-image: image-url('navbar-active-item.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
   }
 
   .nav > li {
@@ -243,7 +249,7 @@ footer {
 #macbook_carousel {
   position:relative;
   height:540px;
-  background:url(../img/mac.png) top center no-repeat;
+  background:image-url('mac.png') top center no-repeat;
   margin:30px 0 0px 0;
 }
 #macbook_carousel .carousel {
@@ -479,7 +485,7 @@ footer {
   margin-left:-24px;
   margin-top:-16px;
   cursor:pointer;
-  background:url(../img/icon-zoom.png) center center no-repeat;
+  background:image-url('icon-zoom.png') center center no-repeat;
 }
 .not-ie .zoom .zoom-overlay {
   display:block;

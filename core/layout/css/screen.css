@@ -1463,9 +1463,9 @@ a.label:hover, a.badge:hover { color: #ffffff; text-decoration: none; cursor: po
 @media (min-width: 980px) { .nav-collapse.collapse { height: auto !important; overflow: visible !important; } }
 /*  Font Awesome the iconic font designed for use with Twitter Bootstrap ------------------------------------------------------- The full suite of pictographic icons, examples, and documentation can be found at: http://fortawesome.github.com/Font-Awesome/
  License ------------------------------------------------------- The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0: http://creativecommons.org/licenses/by/3.0/ A mention of 'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable source code is considered acceptable attribution (most common on the web). If human readable source code is not available to the end user, a mention in an 'About' or 'Credits' screen is considered acceptable (most common in desktop or mobile software).
- Contact ------------------------------------------------------- Email: dave@davegandy.com Twitter: http://twitter.com/fortaweso_me Work: http://lemonwi.se co-founder
+ Contact ------------------------------------------------------- Email: dave@davegandy.com Twitter: http://twitter.com/fortaweso_me Work: Lead Product Designer @ http://kyruus.com
  */
-@font-face { font-family: "FontAwesome"; src: url("font/fontawesome-webfont.eot"); src: url("font/fontawesome-webfont.eot?#iefix") format("eot"), url("font/fontawesome-webfont.woff") format("woff"), url("font/fontawesome-webfont.ttf") format("truetype"), url("font/fontawesome-webfont.svg#FontAwesome") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "FontAwesome"; src: url('fonts/../../font/fontawesome-webfont.eot'); src: url('fonts/../../font/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/../../font/fontawesome-webfont.woff') format('woff'), url('fonts/../../font/fontawesome-webfont.ttf') format('truetype'), url('fonts/../../font/fontawesome-webfont.otf') format('opentype'), url('fonts/../../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('fonts/../../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg'); font-weight: normal; font-style: normal; }
 
 /*  Font Awesome styles ------------------------------------------------------- */
 [class^="icon-"]:before, [class*=" icon-"]:before { font-family: FontAwesome; font-weight: normal; font-style: normal; display: inline-block; text-decoration: inherit; }
@@ -1473,19 +1473,16 @@ a.label:hover, a.badge:hover { color: #ffffff; text-decoration: none; cursor: po
 a [class^="icon-"], a [class*=" icon-"] { display: inline-block; text-decoration: inherit; }
 
 /* makes the font 33% larger relative to the icon container */
-.icon-large:before { vertical-align: top; font-size: 1.3333333333333333em; }
+.icon-large:before { vertical-align: middle; font-size: 4/3em; }
 
-.btn [class^="icon-"], .btn [class*=" icon-"] { /* keeps button heights with and without icons the same */ line-height: .9em; }
+.btn [class^="icon-"], .btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] { /* keeps button heights with and without icons the same */ line-height: .9em; }
 
 li [class^="icon-"], li [class*=" icon-"] { display: inline-block; width: 1.25em; text-align: center; }
+li .icon-large:before, li .icon-large:before { /* 1.5 increased font size for icon-large * 1.25 width */ width: 1.875em; }
 
-li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] { /* 1.5 increased font size for icon-large * 1.25 width */ width: 1.875em; }
-
-li[class^="icon-"], li[class*=" icon-"] { margin-left: 0; list-style-type: none; }
-
-li[class^="icon-"]:before, li[class*=" icon-"]:before { text-indent: -2em; text-align: center; }
-
-li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before { text-indent: -1.33333em; }
+ul.icons { list-style-type: none; margin-left: 2em; text-indent: -0.8em; }
+ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] { width: .8em; }
+ul.icons li .icon-large:before, ul.icons li .icon-large:before { /* 1.5 increased font size for icon-large * 1.25 width */ vertical-align: initial; }
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen readers do not read off random characters that represent icons */
 .icon-glass:before { content: "\f000"; }
@@ -1548,7 +1545,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before { te
 
 .icon-repeat:before { content: "\f01e"; }
 
-/* \f020 doesn't work in Safari. all shifted one down */
+/* \f020 is not a valid unicode character. all shifted one down */
 .icon-refresh:before { content: "\f021"; }
 
 .icon-list-alt:before { content: "\f022"; }
@@ -1909,6 +1906,94 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before { te
 
 .icon-user-md:before { content: "\f200"; }
 
+.icon-apple-logo:before { content: "\f500"; }
+
+.icon-windows-8:before { content: "\f501"; }
+
+.icon-js-fiddle:before { content: "\f502"; }
+
+.icon-skype:before { content: "\f503"; }
+
+.icon-youtube-sign:before { content: "\f504"; }
+
+.icon-youtube:before { content: "\f505"; }
+
+.icon-vimeo-sign:before { content: "\f506"; }
+
+.icon-vimeo:before { content: "\f507"; }
+
+.icon-lastfm-sign:before { content: "\f508"; }
+
+.icon-lastfm:before { content: "\f509"; }
+
+.icon-rss-sign:before { content: "\f50a"; }
+
+.icon-reddit:before { content: "\f50b"; }
+
+.icon-delicious-sign:before { content: "\f50c"; }
+
+.icon-wordpress-sign:before { content: "\f50d"; }
+
+.icon-wordpress:before { content: "\f50e"; }
+
+.icon-git-fork:before { content: "\f50f"; }
+
+.icon-blogger-sign:before { content: "\f510"; }
+
+.icon-blogger:before { content: "\f511"; }
+
+.icon-tumblr-sign:before { content: "\f512"; }
+
+.icon-tumblr:before { content: "\f513"; }
+
+.icon-flickr-sign:before { content: "\f514"; }
+
+.icon-flickr:before { content: "\f515"; }
+
+.icon-picasa-sign:before { content: "\f516"; }
+
+.icon-picasa:before { content: "\f517"; }
+
+.icon-amazon-sign:before { content: "\f518"; }
+
+.icon-amazon:before { content: "\f519"; }
+
+.icon-yelp-sign:before { content: "\f51a"; }
+
+.icon-yelp:before { content: "\f51b"; }
+
+.icon-soundcloud:before { content: "\f51c"; }
+
+.icon-spotify:before { content: "\f51d"; }
+
+.icon-yahoo-sign:before { content: "\f520"; }
+
+.icon-yahoo:before { content: "\f521"; }
+
+.icon-evernote-sign:before { content: "\f522"; }
+
+.icon-evernote:before { content: "\f523"; }
+
+.icon-google-sign:before { content: "\f524"; }
+
+.icon-google:before { content: "\f525"; }
+
+.icon-hacker-news:before { content: "\f526"; }
+
+.icon-map:before { content: "\f529"; }
+
+.icon-bus-sign:before { content: "\f52a"; }
+
+.icon-bike-sign:before { content: "\f52b"; }
+
+.icon-car-sign:before { content: "\f52c"; }
+
+.icon-taxi-sign:before { content: "\f52d"; }
+
+.icon-truck-sign:before { content: "\f52e"; }
+
+.icon-handicap-sign:before { content: "\f52f"; }
+
 ::-moz-selection { background: #FC9362; color: #fff; text-shadow: none; }
 
 ::selection { background: #FC9362; color: #fff; text-shadow: none; }
@@ -1951,6 +2036,8 @@ footer .social-networks .icon-github { border: 3px solid #A9CF54; }
 footer .social-networks .icon-github:hover { background: #a9cf54; }
 footer .social-networks .icon-pinterest { border: 3px solid #DE2C6C; }
 footer .social-networks .icon-pinterest:hover { background: #de2c6c; }
+footer .social-networks .icon-lastfm { border: 3px solid #DF1C00; }
+footer .social-networks .icon-lastfm:hover { background: #DF1C00; }
 footer .social-networks .icon-twitter { border: 3px solid #31CDFD; }
 footer .social-networks .icon-twitter:hover { background: #31CDFD; }
 footer .social-networks .icon-google-plus { border: 3px solid #C9402E; }
@@ -1970,7 +2057,7 @@ footer .social-networks a:hover { background: #000; color: #fff; }
 .navbar .brand { font-weight: 400; font-size: 28px; color: #222; padding-top: 20px; }
 .navbar .brand span { font-size: 40px; line-height: 0; }
 .navbar .nav > li.active > a, .navbar .nav > li.active:hover > a { background-color: transparent; font-weight: bold; color: #222; }
-.navbar .nav > li.active > a { background-image: url(../img/navbar-active-item.png); background-position: center bottom; background-repeat: no-repeat; }
+.navbar .nav > li.active > a { background-image: url('../images/navbar-active-item.png?1346383858'); background-position: center bottom; background-repeat: no-repeat; }
 .navbar .nav > li { margin: 0 0 0 10px; }
 .navbar .nav > li > a { padding: 26px 10px 26px 10px; color: #444!important; font-size: 1.1em; text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25); }
 .navbar .nav > li > a:hover { color: #222; text-decoration: underline; }
@@ -1989,7 +2076,7 @@ footer .social-networks a:hover { background: #000; color: #fff; }
 
 .carousel-control.right { right: 0px; }
 
-#macbook_carousel { position: relative; height: 540px; background: url(../img/mac.png) top center no-repeat; margin: 30px 0 0px 0; }
+#macbook_carousel { position: relative; height: 540px; background: url('../images/mac.png?1346383858') top center no-repeat; margin: 30px 0 0px 0; }
 
 #macbook_carousel .carousel { width: 600px; margin: 0 auto; padding: 28px 0 0 0; }
 
@@ -2079,7 +2166,7 @@ footer .social-networks a:hover { background: #000; color: #fff; }
 
 .zoom { position: relative; }
 
-.zoom .zoom-overlay { display: none; position: absolute; left: 50%; width: 42px; height: 42px; margin-left: -24px; margin-top: -16px; cursor: pointer; background: url(../img/icon-zoom.png) center center no-repeat; }
+.zoom .zoom-overlay { display: none; position: absolute; left: 50%; width: 42px; height: 42px; margin-left: -24px; margin-top: -16px; cursor: pointer; background: url('../images/icon-zoom.png?1346383858') center center no-repeat; }
 
 .not-ie .zoom .zoom-overlay { display: block; filter: alpha(opacity=0); opacity: 0; -webkit-transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -ms-transition: opacity .2s ease-in-out; -o-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out; }
 
