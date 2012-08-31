@@ -59,16 +59,5 @@
       </div><!-- end .navbar -->
     </header>
 
-    {* Skip link *}
-    <a href="#main">{$lblSkipToContent|ucfirst}</a>
-
     {* Breadcrumb *}
-    {include:core/layout/templates/breadcrumb.tpl}
-
-    {* Language *}
-    {include:core/layout/templates/languages.tpl}
-
-    {* Top position *}
-    {iteration:positionTop}
-      {$positionTop.blockContent}
-    {/iteration:positionTop}
+    {* {include:core/layout/templates/breadcrumb.tpl} *}
