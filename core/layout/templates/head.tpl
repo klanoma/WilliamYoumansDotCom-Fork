@@ -38,15 +38,29 @@
     {$siteHTMLHeader}
   </head>
   <body class="{$LANGUAGE}" itemscope itemtype="http://schema.org/WebPage">
-
-    {* Logo *}
-    <a href="/">{$siteTitle}</a>
+    <header id="header">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/">
+              {$siteTitle}
+            </a>
+            <div class="nav-collapse fr">
+              {* Navigation *}
+              {$var|getnavigation:'page':0:1}
+            </div><!--/.nav-collapse -->
+          </div><!-- end .container -->
+        </div><!-- end .navbar-inner -->
+      </div><!-- end .navbar -->
+    </header>
 
     {* Skip link *}
     <a href="#main">{$lblSkipToContent|ucfirst}</a>
-
-    {* Navigation *}
-    {$var|getnavigation:'page':0:1}
 
     {* Breadcrumb *}
     {include:core/layout/templates/breadcrumb.tpl}
