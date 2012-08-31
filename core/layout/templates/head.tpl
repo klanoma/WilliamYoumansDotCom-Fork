@@ -38,3 +38,26 @@
   {$siteHTMLHeader}
 </head>
 <body class="{$LANGUAGE}" itemscope itemtype="http://schema.org/WebPage">
+
+{* Logo *}
+<a href="/">{$siteTitle}</a>
+
+{* Skip link *}
+<a href="#main">{$lblSkipToContent|ucfirst}</a>
+
+{* Navigation *}
+{$var|getnavigation:'page':0:1}
+
+{* Breadcrumb *}
+{include:core/layout/templates/breadcrumb.tpl}
+
+{* Navigation *}
+{$var|getnavigation:'page':0:1}
+
+{* Language *}
+{include:core/layout/templates/languages.tpl}
+
+{* Top position *}
+{iteration:positionTop}
+  {$positionTop.blockContent}
+{/iteration:positionTop}
