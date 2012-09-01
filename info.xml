@@ -23,19 +23,24 @@
       <positions>
         <position name="main" />
         <position name="left" />
+        <position name="footerleft" />
+        <position name="footerright" />
       </positions>
       <format>
-        [left,main,main,main]
+        [left,main,main,main],[footerleft,/,/,footerright]
       </format>
     </template>
     <template label="Home" path="core/layout/templates/home.tpl">
       <positions>
         <position name="main" />
         <position name="left" />
+        <position name="center" />
         <position name="right" />
+        <position name="footerleft" />
+        <position name="footerright" />
       </positions>
       <format>
-        [main,main,main,main],[left,left,right,right]
+        [main,main,main,main],[left,center,center,right],[footerleft,/,/,footerright]
       </format>
     </template>
   </templates>
