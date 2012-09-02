@@ -23,8 +23,16 @@
       <positions>
         <position name="main" />
         <position name="left" />
-        <position name="footerleft" />
-        <position name="footerright" />
+        <position name="footerleft">
+          <defaults>
+            <widget module="blog" action="categories" />
+          </defaults>
+        </position>
+        <position name="footerright">
+          <defaults>
+            <widget module="blog" action="recent_articles_list" />
+          </defaults>
+        </position>
       </positions>
       <format>
         [left,main,main,main],[footerleft,/,/,footerright]
@@ -36,8 +44,16 @@
         <position name="left" />
         <position name="center" />
         <position name="right" />
-        <position name="footerleft" />
-        <position name="footerright" />
+        <position name="footerleft">
+          <defaults>
+            <widget module="blog" action="categories" />
+          </defaults>
+        </position>
+        <position name="footerright">
+          <defaults>
+            <widget module="blog" action="recent_articles_list" />
+          </defaults>
+        </position>
       </positions>
       <format>
         [main,main,main,main],[left,center,center,right],[footerleft,/,/,footerright]
