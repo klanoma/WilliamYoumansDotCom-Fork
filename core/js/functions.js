@@ -21,6 +21,8 @@ jQuery(document).ready(function($) {
     Twitter bootstrap - carousel, tooltip, popover
      -------------------------------------------------------- */
 
+    $('.carousel-inner .item:first-child').addClass('active');
+
     // initialize carousel
     $('[rel=carousel]').carousel()
     // initialize tooltip
