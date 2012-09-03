@@ -1,8 +1,5 @@
 {include:core/layout/templates/head.tpl}
 
-<div id="content" class="container">
-</div>
-
 <!-- Carousel -->
 <div id="carousel" class="carousel slide" rel="carousel">
   <!-- Carousel items -->
