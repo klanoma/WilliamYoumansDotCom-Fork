@@ -46,6 +46,7 @@
                   </a>
                 </span>
               {/iteration:footerLinks}
+              &nbsp;
             </div>
             <div class="span4">
               <i class="icon-envelope"></i> &nbsp;

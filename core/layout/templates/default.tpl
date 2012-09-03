@@ -1,44 +1,36 @@
 {include:core/layout/templates/head.tpl}
 
-{* Subnavigation *}
-{$var|getsubnavigation:'page':{$page.id}:2}
+<div id="content" class="container">
 
-{* Left position *}
-{iteration:positionLeft}
-  {option:positionLeft.blockIsHTML}
-    <section class="mod">
-      <div class="inner">
-        <div class="bd content">
-          {$positionLeft.blockContent}
+  {* Subnavigation *}
+  {$var|getsubnavigation:'page':{$page.id}:2}
+
+  {* Page title *}
+  {option:!hideContentTitle}
+      <div class="hero-unit">
+        <div class="container">
+          <h1 class="ac">{$page.title}</h1>
         </div>
       </div>
-    </section>
-  {/option:positionLeft.blockIsHTML}
-  {option:!positionLeft.blockIsHTML}
-    {$positionLeft.blockContent}
-  {/option:!positionLeft.blockIsHTML}
-{/iteration:positionLeft}
+  {/option:!hideContentTitle}
 
-{* Page title *}
-{option:!hideContentTitle}
-<h1>{$page.title}</h1>
-{/option:!hideContentTitle}
-
-{* Main position *}
-{iteration:positionMain}
-  {option:positionMain.blockIsHTML}
-    <section class="mod">
-      <div class="inner">
-        <div class="bd content">
-          {$positionMain.blockContent}
+  {* Main position *}
+  {iteration:positionMain}
+    {option:positionMain.blockIsHTML}
+      <section class="mod">
+        <div class="inner">
+          <div class="bd content">
+            {$positionMain.blockContent}
+          </div>
         </div>
-      </div>
-    </section>
-  {/option:positionMain.blockIsHTML}
-  {option:!positionMain.blockIsHTML}
-    {$positionMain.blockContent}
-  {/option:!positionMain.blockIsHTML}
-{/iteration:positionMain}
+      </section>
+    {/option:positionMain.blockIsHTML}
+    {option:!positionMain.blockIsHTML}
+      {$positionMain.blockContent}
+    {/option:!positionMain.blockIsHTML}
+  {/iteration:positionMain}
+
+</div>
 
 <noscript>
   <div class="message notice">
