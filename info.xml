@@ -21,6 +21,7 @@
   <templates>
     <template label="Default" path="core/layout/templates/default.tpl">
       <positions>
+        <position name="subtitle" />
         <position name="main" />
         <position name="footerleft">
           <defaults>
@@ -34,7 +35,7 @@
         </position>
       </positions>
       <format>
-        [main,main,main,main],[footerleft,/,/,footerright]
+        [subtitle,/,/,/],[main,main,main,main],[footerleft,/,/,footerright]
       </format>
     </template>
     <template label="Home" path="core/layout/templates/home.tpl">

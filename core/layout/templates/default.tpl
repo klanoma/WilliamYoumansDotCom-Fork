@@ -7,23 +7,30 @@
 
   {* Page title *}
   {option:!hideContentTitle}
-      <div class="hero-unit">
-        <div class="container">
-          <h1 class="ac">{$page.title}</h1>
-        </div>
+    <div class="hero-unit faq">
+      <div class="ac">
+        <h1>{$page.title}</h1>
+
+        {* Subtitle position *}
+        {iteration:positionSubtitle}
+          {option:positionSubtitle.blockIsHTML}
+            {$positionSubtitle.blockContent}
+          {/option:positionSubtitle.blockIsHTML}
+          {option:!positionSubtitle.blockIsHTML}
+            {$positionSubtitle.blockContent}
+          {/option:!positionSubtitle.blockIsHTML}
+        {/iteration:positionSubtitle}
+
       </div>
+    </div>
   {/option:!hideContentTitle}
 
   {* Main position *}
   {iteration:positionMain}
     {option:positionMain.blockIsHTML}
-      <section class="mod">
-        <div class="inner">
-          <div class="bd content">
-            {$positionMain.blockContent}
-          </div>
-        </div>
-      </section>
+      <div class="row">
+        {$positionMain.blockContent}
+      </div>
     {/option:positionMain.blockIsHTML}
     {option:!positionMain.blockIsHTML}
       {$positionMain.blockContent}
