@@ -1,4 +1,4 @@
-    <footer class="row">
+    <footer>
       <div class="container">
         <div class="row">
           <div class="span4">
@@ -17,6 +17,7 @@
             <a href="http://www.facebook.com/wyoumans" title="Follow us on Facebook" class="icon-facebook" target="_blank"></a>
             <a href="http://www.github.com/klanoma" title="Follow us on Github" class="icon-github" target="_blank"></a>
             <a href="http://www.last.fm/gotwilly" title="Follow us on Last.fm" class="icon-lastfm" target="_blank"></a>
+            <a href="#" title="Follow us on RSS" class="icon-rss" target="_blank"></a>
           </div>
           <div class="span4">
             {* FooterRight position *}

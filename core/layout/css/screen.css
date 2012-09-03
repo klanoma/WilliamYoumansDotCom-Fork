@@ -2042,6 +2042,8 @@ footer .social-networks .icon-twitter { border: 3px solid #31CDFD; }
 footer .social-networks .icon-twitter:hover { background: #31CDFD; }
 footer .social-networks .icon-google-plus { border: 3px solid #C9402E; }
 footer .social-networks .icon-google-plus:hover { background: #C9402E; }
+footer .social-networks .icon-rss { border: 3px solid #FF6600; }
+footer .social-networks .icon-rss:hover { background: #FF6600; }
 footer .social-networks a:hover { background: #000; color: #fff; }
 
 #footer-extra { background: #1c1c1c; padding: 10px 0; font-size: 0.9em; color: #999; }
