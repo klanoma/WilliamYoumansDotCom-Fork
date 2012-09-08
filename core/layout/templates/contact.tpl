@@ -10,13 +10,13 @@
   {/option:!positionMain.blockIsHTML}
 {/iteration:positionMain}
 
-<div class="container">
+<div class="container hero-unit">
   <div class="row">
 
     {* Left position *}
     {iteration:positionLeft}
       {option:positionLeft.blockIsHTML}
-        <div class="span4">
+        <div class="span4 ac">
           {$positionLeft.blockContent}
         </div>
       {/option:positionLeft.blockIsHTML}
