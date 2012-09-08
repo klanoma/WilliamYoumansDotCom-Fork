@@ -59,5 +59,29 @@
         [main,main,main,main],[left,center,center,right],[footerleft,/,/,footerright]
       </format>
     </template>
+    <template label="Contact" path="core/layout/templates/contact.tpl">
+      <positions>
+        <position name="main" />
+        <position name="left" />
+        <position name="right" >
+          <defaults>
+            <widget module="formbuilder" action="contact" />
+          </defaults>
+        </position>
+        <position name="footerleft">
+          <defaults>
+            <widget module="blog" action="categories" />
+          </defaults>
+        </position>
+        <position name="footerright">
+          <defaults>
+            <widget module="blog" action="recent_articles_list" />
+          </defaults>
+        </position>
+      </positions>
+      <format>
+        [main,main,main,main],[left,right,right,right],[footerleft,/,/,footerright]
+      </format>
+    </template>
   </templates>
 </theme>

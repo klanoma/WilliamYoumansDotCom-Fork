@@ -2187,3 +2187,5 @@ ul.the-icons { margin: 0; }
 ul.the-icons li { display: inline; padding: 10px 20px; margin: 0; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
 
 ul.the-icons li:hover { background: #eee; }
+
+footer .social-networks { min-height: 140px; }
