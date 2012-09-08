@@ -6,7 +6,7 @@ html {
   background:#1C1C1C;
 }
 body {
-  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $base-family;
   border-top:5px solid #E0E8EA;
 }
 .btn.btn-primary {
