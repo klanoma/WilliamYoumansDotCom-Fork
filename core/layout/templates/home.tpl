@@ -21,7 +21,7 @@
   <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
 </div>
 
-<div class="container">
+<div class="container" id="content">
 
   <div class="row">
 
