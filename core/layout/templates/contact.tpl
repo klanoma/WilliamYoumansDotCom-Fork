@@ -10,7 +10,7 @@
   {/option:!positionMain.blockIsHTML}
 {/iteration:positionMain}
 
-<div class="container hero-unit">
+<div class="container hero-unit" id="content">
   <div class="row">
 
     {* Left position *}
