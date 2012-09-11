@@ -25,12 +25,12 @@
         <position name="main" />
         <position name="footerleft">
           <defaults>
-            <widget module="blog" action="categories" />
+            <widget module="blog" action="recent_articles_list" />
           </defaults>
         </position>
         <position name="footerright">
           <defaults>
-            <widget module="blog" action="recent_articles_list" />
+            <widget module="blog" action="categories" />
           </defaults>
         </position>
       </positions>
@@ -45,12 +45,12 @@
         <position name="right" />
         <position name="footerleft">
           <defaults>
-            <widget module="blog" action="categories" />
+            <widget module="blog" action="recent_articles_list" />
           </defaults>
         </position>
         <position name="footerright">
           <defaults>
-            <widget module="blog" action="recent_articles_list" />
+            <widget module="blog" action="categories" />
           </defaults>
         </position>
       </positions>
@@ -68,12 +68,12 @@
         </position>
         <position name="footerleft">
           <defaults>
-            <widget module="blog" action="categories" />
+            <widget module="blog" action="recent_articles_list" />
           </defaults>
         </position>
         <position name="footerright">
           <defaults>
-            <widget module="blog" action="recent_articles_list" />
+            <widget module="blog" action="categories" />
           </defaults>
         </position>
       </positions>
