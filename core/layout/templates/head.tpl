@@ -15,7 +15,7 @@
     {$meta}
     {$metaCustom}
 
-    <title>{$pageTitle}</title>
+    <title>{$siteTitle} | {$pageTitle}</title>
 
     {* Favicon and Apple touch icon *}
     <link rel="shortcut icon" href="{$THEME_URL}/favicon.ico" />
