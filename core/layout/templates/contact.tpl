@@ -1,16 +1,13 @@
 {include:core/layout/templates/head.tpl}
 
-{* Main position *}
-{iteration:positionMain}
-  {option:positionMain.blockIsHTML}
-    {$positionMain.blockContent}
-  {/option:positionMain.blockIsHTML}
-  {option:!positionMain.blockIsHTML}
-    {$positionMain.blockContent}
-  {/option:!positionMain.blockIsHTML}
-{/iteration:positionMain}
+<div class="container" id="content">
+  {* Page title *}
+  {option:!hideContentTitle}
+    <div class="hero-unit faq">
+      <h1>{$page.title}</h1>
+    </div>
+  {/option:!hideContentTitle}
 
-<div class="container hero-unit" id="content">
   <div class="row">
 
     {* Left position *}
@@ -25,17 +22,17 @@
       {/option:!positionLeft.blockIsHTML}
     {/iteration:positionLeft}
 
-    {* Right position *}
-    {iteration:positionRight}
-      {option:positionRight.blockIsHTML}
+    {* Main position *}
+    {iteration:positionMain}
+      {option:positionMain.blockIsHTML}
         <div class="span8">
-          {$positionRight.blockContent}
+          {$positionMain.blockContent}
         </div>
-      {/option:positionRight.blockIsHTML}
-      {option:!positionRight.blockIsHTML}
-        {$positionRight.blockContent}
-      {/option:!positionRight.blockIsHTML}
-    {/iteration:positionRight}
+      {/option:positionMain.blockIsHTML}
+      {option:!positionMain.blockIsHTML}
+        {$positionMain.blockContent}
+      {/option:!positionMain.blockIsHTML}
+    {/iteration:positionMain}
 
   </div>
 </div>

@@ -60,9 +60,8 @@
     </template>
     <template label="Contact" path="core/layout/templates/contact.tpl">
       <positions>
-        <position name="main" />
         <position name="left" />
-        <position name="right" >
+        <position name="main" >
           <defaults>
             <widget module="formbuilder" action="contact" />
           </defaults>
@@ -79,7 +78,7 @@
         </position>
       </positions>
       <format>
-        [main,main,main,main],[left,right,right,right],[footerleft,/,/,footerright]
+        [left,main,main,main],[footerleft,/,/,footerright]
       </format>
     </template>
   </templates>

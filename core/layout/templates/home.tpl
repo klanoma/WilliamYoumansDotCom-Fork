@@ -14,7 +14,7 @@
     {* Left position *}
     {iteration:positionLeft}
       {option:positionLeft.blockIsHTML}
-        <div class="span4">
+        <div class="span4 home-left">
           {$positionLeft.blockContent}
         </div>
       {/option:positionLeft.blockIsHTML}
@@ -26,7 +26,7 @@
     {* Main position *}
     {iteration:positionMain}
       {option:positionMain.blockIsHTML}
-        <div class="span4">
+        <div class="span5 home-middle">
           {$positionMain.blockContent}
         </div>
       {/option:positionMain.blockIsHTML}
@@ -38,7 +38,7 @@
     {* Right position *}
     {iteration:positionRight}
       {option:positionRight.blockIsHTML}
-        <div class="span4">
+        <div class="span3 home-right">
           {$positionRight.blockContent}
         </div>
       {/option:positionRight.blockIsHTML}
