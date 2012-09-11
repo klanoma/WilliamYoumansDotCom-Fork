@@ -1990,7 +1990,7 @@ ul.icons li .icon-large:before, ul.icons li .icon-large:before { /* 1.5 increase
 
 html { background: #1C1C1C; }
 
-body { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; border-top: 5px solid #E0E8EA; }
+body { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; weight: 300; border-top: 5px solid #E0E8EA; }
 
 .btn.btn-primary { background-image: none; box-shadow: none; }
 
@@ -2167,7 +2167,7 @@ ul.the-icons li { display: inline; padding: 10px 20px; margin: 0; border-radius:
 
 ul.the-icons li:hover { background: #eee; }
 
-body { background: #aac8e0 url('../images/shade.jpg?1347079824') repeat-x 0 0; color: #223344; border: 1px solid transparent; }
+body { background: #aac8e0 url('../images/shade.jpg?1347079824') repeat-x 0 0; color: #223344; border: 1px solid transparent; font-weight: 300; font-size: 16px; line-height: 18px; }
 
 footer .social-networks { min-height: 140px; }
 
@@ -2188,10 +2188,38 @@ a:active { color: #cc6600; }
 .navbar .nav { float: none; clear: both; text-align: center; }
 .navbar .nav > li { float: none; display: inline-block; zoom: 1; *display: inline; }
 .navbar .nav > li > a:hover, .navbar .nav > li.active > a, .navbar .nav > li.active > a:hover { background-color: #223344; }
-.navbar .nav > li > a { text-shadow: 0 0 0; color: #223344; font-size: 1.2em; }
+.navbar .nav > li > a { text-shadow: 0 0 0; color: #223344; }
 
 #content { min-height: 500px; }
 
-h1, h2, h3, h4, .hero-unit h1 { font-family: 'BanksiaRegular', Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; }
+h1, h2, h3, h4, .hero-unit h1 { font-family: "BanksiaRegular", Helvetica, Arial, sans-serif; font-weight: normal; font-style: normal; }
 
 .hero-unit h1 { font-size: 35px; line-height: 35px; }
+
+h3 { color: #cc6600; }
+
+ul.tools li { margin-bottom: 20px; }
+ul.tools li .icon { display: inline-block; zoom: 1; *display: inline; height: 50px; width: 50px; background: transparent url('../images/home/tools.png?1346161328') no-repeat 0 0; }
+ul.tools li .icon.alfred { background-position: 0 -50px; }
+ul.tools li .icon.apache { background-position: -50px -50px; }
+ul.tools li .icon.chrome { background-position: -100px -50px; }
+ul.tools li .icon.espresso { background-position: -150px -50px; }
+ul.tools li .icon.git { background-position: -200px -50px; }
+ul.tools li .icon.haml { background-position: -250px -50px; }
+ul.tools li .icon.iterm { background-position: -300px -50px; }
+ul.tools li .icon.jquery { background-position: -350px -50px; }
+ul.tools li .icon.linux { background-position: -400px -50px; }
+ul.tools li .icon.macbook { background-position: -450px -50px; }
+ul.tools li .icon.mysql { background-position: -500px -50px; }
+ul.tools li .icon.nanoc { background-position: -550px -50px; }
+ul.tools li .icon.omnifocus { background-position: -600px -50px; }
+ul.tools li .icon.php { background-position: -650px -50px; }
+ul.tools li .icon.ruby { background-position: -700px -50px; }
+ul.tools li .icon.sass { background-position: -750px -50px; }
+ul.tools li .icon.sublime { background-position: -800px -50px; }
+ul.tools li .icon.transmit { background-position: -850px -50px; }
+ul.tools li .icon:hover { background-position-y: 0; }
+
+.distraction { min-height: 154px; height: auto !important; height: 154px; }
+.distraction img { padding-right: 10px; width: 100px; }
+.distraction table { margin-top: 5px; }

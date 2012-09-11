@@ -7,6 +7,7 @@ html {
 }
 body {
   font-family: $base-family;
+  weight: 300;
   border-top:5px solid #E0E8EA;
 }
 .btn.btn-primary {
@@ -494,6 +495,7 @@ footer {
 ul.the-icons {
   margin:0;
 }
+
 ul.the-icons li {
   display:inline;
   padding:10px 20px;
@@ -502,6 +504,7 @@ ul.the-icons li {
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
 }
+
 ul.the-icons li:hover {
   background:#eee;
 }
