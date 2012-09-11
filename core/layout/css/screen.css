@@ -2167,7 +2167,10 @@ ul.the-icons li { display: inline; padding: 10px 20px; margin: 0; border-radius:
 
 ul.the-icons li:hover { background: #eee; }
 
-body { background: #aac8e0 url('../images/shade.jpg?1347079824') repeat-x 0 0; color: #223344; border: 1px solid transparent; font-weight: 300; font-size: 16px; line-height: 18px; }
+html { background-color: #223344; }
+
+body { background: #aac8e0 url('../images/shade.jpg?1347079824') repeat-x 0 0; color: #223344; border: 1px solid #223344; padding: 0; margin: 0; }
+body, body label { font-weight: 300; font-size: 16px; line-height: 18px; }
 
 footer .social-networks { min-height: 140px; }
 
@@ -2225,3 +2228,5 @@ ul.tools li .icon:hover { background-position-y: 0; }
 .distraction table { margin-top: 5px; }
 
 .home-middle { margin: 0 20px 0 0; }
+
+.alert-danger, .alert-error { background-color: transparent; }
