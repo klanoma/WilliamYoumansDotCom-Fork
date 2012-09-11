@@ -108,6 +108,7 @@ h3 {
 ul.tools {
   li {
     margin-bottom: 20px;
+    margin-left: 10px;
     .icon {
       display:inline-block;
       zoom:1;
@@ -179,6 +180,7 @@ ul.tools {
   img {
     padding-right: 10px;
     width: 100px;
+    max-width: 100px;
   }
   table {
     margin-top: 5px;
@@ -186,4 +188,8 @@ ul.tools {
   min-height: 154px;
   height: auto !important;
   height: 154px;
+}
+
+.home-middle {
+  margin: 0 20px 0 0;
 }
