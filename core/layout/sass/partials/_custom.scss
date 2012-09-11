@@ -2,6 +2,9 @@ body {
   background: $light-blue image-url('shade.jpg') repeat-x 0 0;
   color: $dark-blue;
   border: 1px solid transparent;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 footer .social-networks {
@@ -78,7 +81,6 @@ a {
       & > a {
         text-shadow: 0 0 0;
         color: $dark-blue;
-        font-size: 1.2em;
       }
     }
   }
@@ -89,7 +91,7 @@ a {
 }
 
 h1, h2, h3, h4, .hero-unit h1 {
-  font-family: 'BanksiaRegular', Helvetica, Arial, sans-serif;
+  font-family: $header-family;
   font-weight: normal;
   font-style: normal;
 }
@@ -97,4 +99,91 @@ h1, h2, h3, h4, .hero-unit h1 {
 .hero-unit h1 {
   font-size: 35px;
   line-height: 35px;
+}
+
+h3 {
+  color: $orange;
+}
+
+ul.tools {
+  li {
+    margin-bottom: 20px;
+    .icon {
+      display:inline-block;
+      zoom:1;
+      *display:inline;
+      height: 50px;
+      width: 50px;
+      background: transparent image-url('home/tools.png') no-repeat 0 0;
+      &.alfred {
+        background-position: 0 -50px;
+      }
+      &.apache {
+        background-position: -50px -50px;
+      }
+      &.chrome {
+        background-position: -100px -50px;
+      }
+      &.espresso {
+        background-position: -150px -50px;
+      }
+      &.git {
+        background-position: -200px -50px;
+      }
+      &.haml {
+        background-position: -250px -50px;
+      }
+      &.iterm {
+        background-position: -300px -50px;
+      }
+      &.jquery {
+        background-position: -350px -50px;
+      }
+      &.linux {
+        background-position: -400px -50px;
+      }
+      &.macbook {
+        background-position: -450px -50px;
+      }
+      &.mysql {
+        background-position: -500px -50px;
+      }
+      &.nanoc {
+        background-position: -550px -50px;
+      }
+      &.omnifocus {
+        background-position: -600px -50px;
+      }
+      &.php {
+        background-position: -650px -50px;
+      }
+      &.ruby {
+        background-position: -700px -50px;
+      }
+      &.sass {
+        background-position: -750px -50px;
+      }
+      &.sublime {
+        background-position: -800px -50px;
+      }
+      &.transmit {
+        background-position: -850px -50px;
+      }
+      &:hover {
+        background-position-y: 0;
+      }
+    }
+  }
+}
+.distraction {
+  img {
+    padding-right: 10px;
+    width: 100px;
+  }
+  table {
+    margin-top: 5px;
+  }
+  min-height: 154px;
+  height: auto !important;
+  height: 154px;
 }
