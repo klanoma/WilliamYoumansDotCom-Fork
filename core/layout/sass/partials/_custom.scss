@@ -87,3 +87,14 @@ a {
 #content {
   min-height: 500px;
 }
+
+h1, h2, h3, h4, .hero-unit h1 {
+  font-family: 'BanksiaRegular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hero-unit h1 {
+  font-size: 35px;
+  line-height: 35px;
+}

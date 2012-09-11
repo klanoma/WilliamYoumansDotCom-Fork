@@ -1,27 +1,13 @@
 {include:core/layout/templates/head.tpl}
 
-<!-- Carousel -->
-<div id="carousel" class="carousel slide" rel="carousel">
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    {* Main position *}
-    {iteration:positionMain}
-      {option:positionMain.blockIsHTML}
-        <div class="item">
-          {$positionMain.blockContent}
-        </div>
-      {/option:positionMain.blockIsHTML}
-      {option:!positionMain.blockIsHTML}
-        {$positionMain.blockContent}
-      {/option:!positionMain.blockIsHTML}
-    {/iteration:positionMain}
-  </div>
-  <!-- Carousel navigation -->
-  <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
-</div>
-
 <div class="container" id="content">
+
+  {* Page title *}
+  {option:!hideContentTitle}
+    <div class="hero-unit ac">
+      <h1>{$page.title}</h1>
+    </div>
+  {/option:!hideContentTitle}
 
   <div class="row">
 
@@ -37,17 +23,17 @@
       {/option:!positionLeft.blockIsHTML}
     {/iteration:positionLeft}
 
-    {* Center position *}
-    {iteration:positionCenter}
-      {option:positionCenter.blockIsHTML}
+    {* Main position *}
+    {iteration:positionMain}
+      {option:positionMain.blockIsHTML}
         <div class="span4">
-          {$positionCenter.blockContent}
+          {$positionMain.blockContent}
         </div>
-      {/option:positionCenter.blockIsHTML}
-      {option:!positionCenter.blockIsHTML}
-        {$positionCenter.blockContent}
-      {/option:!positionCenter.blockIsHTML}
-    {/iteration:positionCenter}
+      {/option:positionMain.blockIsHTML}
+      {option:!positionMain.blockIsHTML}
+        {$positionMain.blockContent}
+      {/option:!positionMain.blockIsHTML}
+    {/iteration:positionMain}
 
     {* Right position *}
     {iteration:positionRight}
