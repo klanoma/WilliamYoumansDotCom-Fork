@@ -47,10 +47,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="/">
-              {$siteTitle}
-            </a>
-            <div class="nav-collapse fr">
+            <div class="brand-wrapper">
+              <a class="brand" href="/">
+                {$siteTitle}<br>
+                <span class="subheading">web developer – world traveler</span>
+              </a>
+            </div>
+            <div class="nav-collapse">
               {* Navigation *}
               {$var|getnavigation:'page':0:1}
             </div><!--/.nav-collapse -->

@@ -159,55 +159,6 @@ footer {
     border-bottom:0px solid #eee;
     margin-bottom:0px;
   }
-  .navbar-inner {
-    background:#f6f6f6;
-    background-image: none;
-    box-shadow:none;
-    filter:none;
-    padding:0;
-    box-shadow:inset 0 0 3px rgba(0,0,0,.2);
-  }
-  .brand {
-    font-weight:400;
-    font-size:28px;
-    color:#222;
-    padding-top:20px;
-  }
-  .brand b {
-  }
-  .brand span {
-    font-size:40px;
-    line-height:0;
-  }
-  .nav > li.active > a,
-  .nav > li.active:hover > a {
-    background-color:transparent;
-    font-weight:bold;
-    color:#222;
-  }
-  .nav > li.active > a {
-    background-image: image-url('navbar-active-item.png');
-    background-position: center bottom;
-    background-repeat: no-repeat;
-  }
-
-  .nav > li {
-    margin:0 0 0 10px;
-  }
-  .nav > li > a {
-    padding:26px 10px 26px 10px;
-    color: #444!important;
-    font-size:1.1em;
-    text-shadow: 0 -1px 0 rgba(255,255,255, 0.25);
-  }
-  .nav > li > a:hover {
-    color:#222;
-    text-decoration:underline;
-  }
-  .nav > li > button {
-    color: white;
-    margin-top: 22px;
-  }
 }
 
 
