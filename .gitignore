@@ -10,3 +10,8 @@
 #Compass & RVM
 .rvmrc
 .sass-cache/*
+
+dump/*
+
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch Rakefile' \
+  --prune-empty --tag-name-filter cat -- --all
