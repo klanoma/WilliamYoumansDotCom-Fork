@@ -60,6 +60,7 @@
     </template>
     <template label="Contact" path="core/layout/templates/contact.tpl">
       <positions>
+        <position name="subtitle" />
         <position name="left" />
         <position name="main" >
           <defaults>
@@ -78,7 +79,7 @@
         </position>
       </positions>
       <format>
-        [left,main,main,main],[footerleft,/,/,footerright]
+        [subtitle,/,/,/],[left,main,main,main],[footerleft,/,/,footerright]
       </format>
     </template>
   </templates>
