@@ -5,6 +5,16 @@
   {option:!hideContentTitle}
     <div class="hero-unit faq">
       <h1>{$page.title}</h1>
+
+      {* Subtitle position *}
+      {iteration:positionSubtitle}
+        {option:positionSubtitle.blockIsHTML}
+          {$positionSubtitle.blockContent}
+        {/option:positionSubtitle.blockIsHTML}
+        {option:!positionSubtitle.blockIsHTML}
+          {$positionSubtitle.blockContent}
+        {/option:!positionSubtitle.blockIsHTML}
+      {/iteration:positionSubtitle}
     </div>
   {/option:!hideContentTitle}
 
@@ -23,16 +33,18 @@
     {/iteration:positionLeft}
 
     {* Main position *}
-    {iteration:positionMain}
-      {option:positionMain.blockIsHTML}
-        <div class="span8 contact-right">
+    <div class="span8 contact-right">
+      {iteration:positionMain}
+        {option:positionMain.blockIsHTML}
+          <div>
+            {$positionMain.blockContent}
+          </div>
+        {/option:positionMain.blockIsHTML}
+        {option:!positionMain.blockIsHTML}
           {$positionMain.blockContent}
-        </div>
-      {/option:positionMain.blockIsHTML}
-      {option:!positionMain.blockIsHTML}
-        {$positionMain.blockContent}
-      {/option:!positionMain.blockIsHTML}
-    {/iteration:positionMain}
+        {/option:!positionMain.blockIsHTML}
+      {/iteration:positionMain}
+    </div>
 
   </div>
 </div>
