@@ -17,9 +17,20 @@
 
     <title>{$siteTitle} | {$pageTitle}</title>
 
-    {* Favicon and Apple touch icon *}
-    <link rel="shortcut icon" href="{$THEME_URL}/favicon.ico" />
-    <link rel="apple-touch-icon" href="{$THEME_URL}/apple-touch-icon.png" />
+    {* Favicons and Apple touch icons *}
+    <!-- For retina-display iPads -->
+    <link href="{$THEME_URL}/apple-touch-icon-xlarge.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png"/>
+    <!-- For retina-display iPhones -->
+    <link href="{$THEME_URL}/apple-touch-icon-large.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png"/>
+    <!-- For iPad 1 -->
+    <link href="{$THEME_URL}/apple-touch-icon-medium.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png"/>
+    <!-- For iPhone 3G, iPod Touch and Android -->
+    <link href="{$THEME_URL}/apple-touch-icon.png" rel="apple-touch-icon-precomposed" type="image/png"/>
+    <!-- For Nokia -->
+    <link href="{$THEME_URL}/apple-touch-icon.png" rel="shortcut icon"/>
+    <!-- For everything else -->
+    <link href="{$THEME_URL}/favicon.png" rel="shortcut icon" type="image/png"/>
+    <link href="{$THEME_URL}/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 
     {* Stylesheets *}
     {iteration:cssFiles}
