@@ -36,10 +36,10 @@
       <div id="footer-extra">
         <div class="container">
           <div class="row">
-            <div class="span4">
+            <div class="span3">
               &copy; {$now|date:'Y'} {$siteTitle}
             </div>
-            <div class="span4">
+            <div class="span6">
               {iteration:footerLinks}
                 <span{option:footerLinks.selected} class="active"{/option:footerLinks.selected}>
                   <a href="{$footerLinks.url}" title="{$footerLinks.title}"{option:footerLinks.rel} rel="{$footerLinks.rel}"{/option:footerLinks.rel}>
@@ -49,7 +49,7 @@
               {/iteration:footerLinks}
               &nbsp;
             </div>
-            <div class="span4">
+            <div class="span3">
               <i class="icon-envelope"></i> &nbsp;
               <a href="mailto:hello@williamyoumans.com">hello@williamyoumans.com</a>
             </div>
