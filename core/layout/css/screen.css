@@ -2644,3 +2644,5 @@ ul.tools li .icon:hover { text-decoration: none; }
 .blog_comment_form input[type=text], .blog_comment_form textarea { width: 500px; }
 
 .blog_meta a:hover { text-decoration: none; }
+
+[class^="icon-"], [class*=" icon-"] { background-image: none; }

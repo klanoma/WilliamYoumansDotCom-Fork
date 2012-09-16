@@ -287,3 +287,7 @@ ul.tools {
     text-decoration: none;
   }
 }
+
+[class^="icon-"], [class*=" icon-"] {
+  background-image: none;
+}
