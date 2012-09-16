@@ -23,7 +23,7 @@
     {* Left position *}
     {iteration:positionLeft}
       {option:positionLeft.blockIsHTML}
-        <div class="span4 ac contact-left">
+        <div class="span3 ac contact-left">
           {$positionLeft.blockContent}
         </div>
       {/option:positionLeft.blockIsHTML}
@@ -33,7 +33,7 @@
     {/iteration:positionLeft}
 
     {* Main position *}
-    <div class="span8 contact-right">
+    <div class="span9 contact-right">
       {iteration:positionMain}
         {option:positionMain.blockIsHTML}
           <div>

@@ -32,6 +32,10 @@ a {
   @include link-colors($orange, $orange, $orange, $orange);
 }
 
+h3 {
+  font-size: 21px;
+}
+
 .navbar {
   margin-top: 50px;
 
@@ -42,6 +46,7 @@ a {
     filter:none;
     padding:0;
     box-shadow:inset 0 0 0 rgba(0,0,0,.2);
+    border: 0;
   }
 
   .brand-wrapper {
@@ -62,6 +67,7 @@ a {
       background-repeat: no-repeat;
       background-position: 0 5px;
       text-align: center;
+      text-shadow: 0 0 0 $transparent;
 
       .subheading {
         color: $orange;
@@ -74,6 +80,7 @@ a {
     float: none;
     clear: both;
     text-align: center;
+    margin: 0;
 
     & > li {
       float: none;
@@ -81,14 +88,18 @@ a {
       zoom:1;
       *display:inline;
 
+      & > a {
+        text-shadow: 0 0 0;
+        color: $dark-blue;
+        margin: 0 8px;
+      }
+
+
       & > a:hover,
       &.active > a,
       &.active > a:hover {
         background-color: $dark-blue;
-      }
-      & > a {
-        text-shadow: 0 0 0;
-        color: $dark-blue;
+        color: $white;
       }
     }
   }
@@ -252,17 +263,21 @@ ul.tools {
   height: 154px;
 }
 
-.alert-danger,
-.alert-error {
-  background-color: transparent;
-}
-
 .contact-left {
   padding-top: 40px;
 }
 
-.contact-right {
-  p.alert-error {
-    margin-top: 5px;
+.formError {
+  padding-left: 5px;
+  color: #B94A48;
+}
+
+.blog_footer {
+  margin: 20px 0;
+}
+
+.blog_comment_form {
+  input[type=text], textarea {
+    width: 500px;
   }
 }
