@@ -25,7 +25,7 @@
   {* Main position *}
   {iteration:positionMain}
     {option:positionMain.blockIsHTML}
-      <div class="row">
+      <div>
         {$positionMain.blockContent}
       </div>
     {/option:positionMain.blockIsHTML}
