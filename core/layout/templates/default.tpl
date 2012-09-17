@@ -7,7 +7,7 @@
 
   {* Page title *}
   {option:!hideContentTitle}
-    <div class="hero-unit faq">
+    <div class="hero-unit">
       <h1>{$page.title}</h1>
 
       {* Subtitle position *}
