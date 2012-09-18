@@ -4,6 +4,6 @@ sass_dir = "core/layout/sass"
 images_dir = "core/layout/images"
 javascripts_dir = "core/js"
 output_style = :compact
-relative_assets = true
+relative_assets = false
 line_comments = false
 preferred_syntax = :scss
