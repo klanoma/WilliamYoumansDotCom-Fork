@@ -15,7 +15,7 @@
     {$meta}
     {$metaCustom}
 
-    <title>{$siteTitle} | {$pageTitle}</title>
+    <title>{$pageTitle} | {$siteTitle}</title>
 
     {* Favicons and Apple touch icons *}
     <!-- For retina-display iPads -->
