@@ -2647,7 +2647,9 @@ ul.tools li .icon:hover { text-decoration: none; }
 
 [class^="icon-"], [class*=" icon-"] { background-image: none; }
 
-.hire-ribbon { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background: transparent url('../images/ribbon.png?1349842249') no-repeat 0 0; position: relative; width: 450px; height: 70px; margin: 50px auto; }
+.hire-ribbon { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background: transparent url('../images/ribbon.png?1349842373') no-repeat 0 0; position: relative; width: 450px; height: 70px; margin: 50px auto; }
 .hire-ribbon a, .hire-ribbon a:visited, .hire-ribbon a:active, .hire-ribbon a:hover { text-decoration: none; color: #801111; }
 .hire-ribbon a:hover { text-decoration: underline; }
 .hire-ribbon p { text-align: center; font-size: 25px!important; color: #801111; text-shadow: #d65c5c 0 1px 0; margin: 0px; padding: 15px 10px; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 300; }
+
+#site-footer ul li { font-size: 0.9em; }
