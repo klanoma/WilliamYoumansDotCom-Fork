@@ -11,6 +11,7 @@
     <meta name="publisher" content="William Youmans" />
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="Muk7w0OzK25unpvJS-Zu6SVz9d6nMMmvDeDm7aVeeCI" />
 
     {$meta}
     {$metaCustom}
