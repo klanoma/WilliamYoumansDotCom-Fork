@@ -69,6 +69,7 @@
     <script src="{$THEME_URL}/core/js/bootstrap.min.js"></script>
     <script src="{$THEME_URL}/core/js/jquery.isotope.min.js"></script>
     <script src="{$THEME_URL}/core/js/jquery.touchSwipe.js"></script>
+    <script src="{$THEME_URL}/core/js/jquery.nyroModal.custom.min.js"></script>
     <script src="{$THEME_URL}/core/js/functions.js"></script>
 
     {* Site wide HTML *}

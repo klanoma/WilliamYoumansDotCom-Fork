@@ -30,20 +30,20 @@ jQuery(document).ready(function($) {
     // initialize popover
     $('[rel=popover]').popover();
 
-      $('.accordion').on('show', function (e) {
-           $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
-      });
+    $('.accordion').on('show', function (e) {
+       $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+    });
 
-      $('.accordion').on('hide', function (e) {
-          $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
-      });
+    $('.accordion').on('hide', function (e) {
+      $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
+    });
 
 
   /* --------------------------------------------------------
     External links
      -------------------------------------------------------- */
 
-      $(window).load(function() {
+    $(window).load(function() {
 
       $('a[rel=external]').attr('target','_blank');
 

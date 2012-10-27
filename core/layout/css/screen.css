@@ -2376,8 +2376,6 @@ ul.icons li .icon-large:before, ul.icons li .icon-large:before { /* 1.5 increase
 
 :focus { outline-color: transparent!important; outline-style: none!important; }
 
-html { background: #1C1C1C; }
-
 body { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif; weight: 300; border-top: 5px solid #E0E8EA; }
 
 .btn.btn-primary { background-image: none; box-shadow: none; }
@@ -2555,9 +2553,7 @@ ul.the-icons li { display: inline; padding: 10px 20px; margin: 0; border-radius:
 
 ul.the-icons li:hover { background: #eee; }
 
-html { background-color: #223344; }
-
-body { background: #aac8e0 url('../images/shade.jpg?1347471411') repeat-x 0 0; color: #223344; border: 1px solid #223344; padding: 0; margin: 0; }
+body { background: #aac8e0 url('../images/shade.jpg?1347471411') repeat-x 0 0; color: #223344; border-top: 1px solid #223344; padding: 0; margin: 0; }
 body, body label { font-weight: 300; font-size: 16px; line-height: 18px; }
 
 footer .social-networks { min-height: 140px; }
