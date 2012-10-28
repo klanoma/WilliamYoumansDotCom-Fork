@@ -11,16 +11,9 @@ if ($.browser.opera) {
   $('.slide').removeClass('slide');
 }
 
-
-// When DOM is fully loaded
 jQuery(document).ready(function($) {
 
   (function() {
-
-  /* --------------------------------------------------------
-    Twitter bootstrap - carousel, tooltip, popover
-     -------------------------------------------------------- */
-
     $('.carousel-inner .item:first-child').addClass('active');
 
     // initialize carousel
@@ -38,22 +31,7 @@ jQuery(document).ready(function($) {
       $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
     });
 
-
-  /* --------------------------------------------------------
-    External links
-     -------------------------------------------------------- */
-
-    $(window).load(function() {
-
-      $('a[rel=external]').attr('target','_blank');
-
-    });
-
   })();
-
-/* --------------------------------------------------------
-  Zoom and link overlays (e.g. for thumbnails)
-   -------------------------------------------------------- */
 
   (function() {
 
@@ -170,82 +148,7 @@ jQuery(document).ready(function($) {
 
   })();
 
-/* --------------------------------------------------------
-  FAQ
-   -------------------------------------------------------- */
-
   (function() {
-
-    $('.faq input[type=text]').keyup(function(){
-
-      // text to search
-      var search = $(this).val().toLowerCase();
-
-      // search if there are at least 3 characters
-      if (search.length > 2) {
-
-        // for each question+answer in list
-        $('.faq li').each(function(){
-
-          var question = $(this).find('h3').text();
-          var answer = $(this).find('p').text();
-
-          var search_in = (question+answer).toLowerCase();
-
-          if (search_in.indexOf(search) == -1) {
-            // no match
-            $(this).hide();
-          } else {
-            // match
-            $(this).show();
-          }
-        })
-
-        if ( ! $('.faq li:visible').length ) {
-          $('.no-results').show();
-        } else {
-          $('.no-results').hide();
-        }
-
-      } else {
-
-        // show all if search box doesn't contains enough characters
-        $('.faq li').show();
-      }
-    })
-
+    $(".nyromodal").nyroModal();
   })();
-
-
-/* --------------------------------------------------------
-  Swipe support for slider
-   -------------------------------------------------------- */
-
-   (function() {
-
-      var is_touch_device = !!('ontouchstart' in window);
-
-    function swipe( e, direction ) {
-
-      var $carousel = $(e.currentTarget);
-
-      if( direction === 'left' )
-        $carousel.find('.carousel-control.right').trigger('click');
-
-      if( direction === 'right' )
-        $carousel.find('.carousel-control.left').trigger('click');
-    }
-
-    if (is_touch_device === true) {
-
-      $('.carousel').swipe({
-        allowPageScroll : 'auto',
-        swipeLeft       : swipe,
-        swipeRight      : swipe
-      });
-
-    }
-
-  })();
-
 })
