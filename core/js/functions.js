@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
         var $this = $(this);
         var $height = $this.find('img').height();
         var span = $('<span>').addClass('zoom-overlay').html('&nbsp;').css('top',$height/2);
-        $this.append(span);
+        $this.find('a.thumbnail').append(span);
       })
 
     });
@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
   Portfolio
    -------------------------------------------------------- */
 
-   (function() {
+  (function() {
 
     $(window).load(function(){
 
@@ -79,10 +79,12 @@ jQuery(document).ready(function($) {
         // add active class to filter selector
         $('#portfolio-filter').find("[data-filter='" + tag + "']").parent().addClass('active');
         // update location hash
-        if (tag!='*')
-        window.location.hash=tag.replace('.','');
-        if (tag=='*')
+        if (tag!='*') {
+          window.location.hash=tag.replace('.','');
+        }
+        if (tag=='*') {
           window.location.hash='';
+        }
       }
 
       if ($container.length) {
@@ -101,7 +103,6 @@ jQuery(document).ready(function($) {
 
         // initialize isotope
         $container.isotope({
-          // options...
           itemSelector : '.project',
           layoutMode   : 'fitRows'
         });
@@ -130,21 +131,21 @@ jQuery(document).ready(function($) {
 
   (function() {
 
-        $('<i id="back-to-top" class="icon-chevron-up"></i>').appendTo($('body'));
+    $('<i id="back-to-top" class="icon-chevron-up"></i>').appendTo($('body'));
 
-      $(window).scroll(function() {
+    $(window).scroll(function() {
 
-        if($(this).scrollTop() != 0) {
-          $('#back-to-top').fadeIn();
-        } else {
-          $('#back-to-top').fadeOut();
-        }
+      if($(this).scrollTop() != 0) {
+        $('#back-to-top').fadeIn();
+      } else {
+        $('#back-to-top').fadeOut();
+      }
 
-      });
+    });
 
-      $('#back-to-top').click(function() {
-        $('body,html').animate({scrollTop:0},600);
-      });
+    $('#back-to-top').click(function() {
+      $('body,html').animate({scrollTop:0},600);
+    });
 
   })();
 
