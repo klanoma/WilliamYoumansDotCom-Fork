@@ -690,10 +690,10 @@ table [class*=span], .row-fluid table [class*=span] { display: table-cell; float
 
 .table-hover tbody tr.info:hover td { background-color: #c4e3f3; }
 
-[class^="icon-"], [class*=" icon-"] { display: inline-block; width: 14px; height: 14px; margin-top: 1px; *margin-right: .3em; line-height: 14px; vertical-align: text-top; background-image: url('../images/glyphicons-halflings.png?1347471411'); background-position: 14px 14px; background-repeat: no-repeat; }
+[class^="icon-"], [class*=" icon-"] { display: inline-block; width: 14px; height: 14px; margin-top: 1px; *margin-right: .3em; line-height: 14px; vertical-align: text-top; background-image: url('../images/template/glyphicons-halflings.png?1347471411'); background-position: 14px 14px; background-repeat: no-repeat; }
 
 /* White icons with optional class, or on hover/active states of certain elements */
-.icon-white, .nav-tabs > .active > a > [class^="icon-"], .nav-tabs > .active > a > [class*=" icon-"], .nav-pills > .active > a > [class^="icon-"], .nav-pills > .active > a > [class*=" icon-"], .nav-list > .active > a > [class^="icon-"], .nav-list > .active > a > [class*=" icon-"], .navbar-inverse .nav > .active > a > [class^="icon-"], .navbar-inverse .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"] { background-image: url('../images/glyphicons-halflings-white.png?1347471411'); }
+.icon-white, .nav-tabs > .active > a > [class^="icon-"], .nav-tabs > .active > a > [class*=" icon-"], .nav-pills > .active > a > [class^="icon-"], .nav-pills > .active > a > [class*=" icon-"], .nav-list > .active > a > [class^="icon-"], .nav-list > .active > a > [class*=" icon-"], .navbar-inverse .nav > .active > a > [class^="icon-"], .navbar-inverse .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"] { background-image: url('../images/template/glyphicons-halflings-white.png?1347471411'); }
 
 .icon-glass { background-position: 0      0; }
 
@@ -2443,18 +2443,6 @@ body { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Ne
 
 .carousel-control.right { right: 0px; }
 
-#macbook_carousel { position: relative; height: 540px; background: url('../images/mac.png?1347471411') top center no-repeat; margin: 30px 0 0px 0; }
-
-#macbook_carousel .carousel { width: 600px; margin: 0 auto; padding: 28px 0 0 0; }
-
-#macbook_carousel .carousel .item { width: 600px; height: 360px; overflow: hidden; }
-
-#macbook_carousel .carousel img { width: 600px; }
-
-#macbook_carousel .carousel-control.left { left: -120px; }
-
-#macbook_carousel .carousel-control.right { right: -120px; }
-
 .hero-unit { position: relative; padding: 40px 0 0 0; background: #fff; }
 .hero-unit h1 { font-size: 2.2em; font-weight: 600; }
 
@@ -2533,7 +2521,7 @@ body { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Ne
 
 .zoom { position: relative; }
 
-.zoom .zoom-overlay { display: none; position: absolute; left: 50%; width: 42px; height: 42px; margin-left: -24px; margin-top: -16px; cursor: pointer; background: url('../images/icon-zoom.png?1347471411') center center no-repeat; }
+.zoom .zoom-overlay { display: none; position: absolute; left: 50%; width: 42px; height: 42px; margin-left: -24px; margin-top: -16px; cursor: pointer; background: url('../images/template/icon-zoom.png?1347471411') center center no-repeat; }
 
 .not-ie .zoom .zoom-overlay { display: block; filter: alpha(opacity=0); opacity: 0; -webkit-transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -ms-transition: opacity .2s ease-in-out; -o-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out; }
 
@@ -2553,7 +2541,7 @@ ul.the-icons li { display: inline; padding: 10px 20px; margin: 0; border-radius:
 
 ul.the-icons li:hover { background: #eee; }
 
-body { background: #aac8e0 url('../images/shade.jpg?1347471411') repeat-x 0 0; color: #223344; border-top: 1px solid #223344; padding: 0; margin: 0; }
+body { background: #aac8e0 url('../images/template/shade.jpg?1347471411') repeat-x 0 0; color: #223344; border-top: 1px solid #223344; padding: 0; margin: 0; }
 body, body label { font-weight: 300; font-size: 16px; line-height: 18px; }
 
 footer .social-networks { min-height: 140px; }
@@ -2572,7 +2560,7 @@ h3 { font-size: 21px; }
 .navbar { margin-top: 50px; }
 .navbar .navbar-inner { background: transparent; background-image: none; box-shadow: none; filter: none; padding: 0; box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.2); border: 0; }
 .navbar .brand-wrapper { clear: both; text-align: center; }
-.navbar .brand-wrapper .brand { float: none; display: block; font-size: 50px; font-family: 'BanksiaRegular', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 25px; color: white; width: 410px; margin: 100px auto 54px auto; padding: 15px 0 0 40px; background-image: url('../images/tea.png?1347471411'); background-repeat: no-repeat; background-position: 0 5px; text-align: center; text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+.navbar .brand-wrapper .brand { float: none; display: block; font-size: 50px; font-family: 'BanksiaRegular', Helvetica, Arial, sans-serif; font-weight: normal; line-height: 25px; color: white; width: 410px; margin: 100px auto 54px auto; padding: 15px 0 0 40px; background-image: url('../images/template/tea.png?1347471411'); background-repeat: no-repeat; background-position: 0 5px; text-align: center; text-shadow: 0 0 0 rgba(0, 0, 0, 0); }
 .navbar .brand-wrapper .brand .subheading { color: #cc6600; font-size: 20px; line-height: 20px; }
 .navbar .nav { float: none; clear: both; text-align: center; margin: 0; }
 .navbar .nav > li { float: none; display: inline-block; zoom: 1; *display: inline; }
@@ -2643,7 +2631,7 @@ ul.tools li .icon:hover { text-decoration: none; }
 
 [class^="icon-"], [class*=" icon-"] { background-image: none; }
 
-.hire-ribbon { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background: transparent url('../images/ribbon.png?1349842373') no-repeat 0 0; position: relative; width: 450px; height: 70px; margin: 60px auto 50px auto; }
+.hire-ribbon { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background: transparent url('../images/template/ribbon.png?1349842373') no-repeat 0 0; position: relative; width: 450px; height: 70px; margin: 60px auto 50px auto; }
 .hire-ribbon a, .hire-ribbon a:visited, .hire-ribbon a:active, .hire-ribbon a:hover { text-decoration: none; color: #501111; }
 .hire-ribbon a:hover { text-decoration: underline; }
 .hire-ribbon p { text-align: center; font-size: 25px!important; color: #501111; text-shadow: #d65c5c 0 1px 0; margin: 0px; padding: 15px 10px; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 300; }

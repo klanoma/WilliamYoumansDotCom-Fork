@@ -1,5 +1,5 @@
 body {
-  background: $light-blue image-url('shade.jpg') repeat-x 0 0;
+  background: $light-blue image-url('template/shade.jpg') repeat-x 0 0;
   color: $dark-blue;
   border-top: 1px solid $dark-blue;
   padding: 0;
@@ -59,7 +59,7 @@ h3 {
       width: 410px;
       margin: 100px auto 54px auto;
       padding: 15px 0 0 40px;
-      background-image: image-url('tea.png');
+      background-image: image-url('template/tea.png');
       background-repeat: no-repeat;
       background-position: 0 5px;
       text-align: center;
@@ -295,7 +295,7 @@ ul.tools {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: transparent image-url('ribbon.png') no-repeat 0 0;
+  background: transparent image-url('template/ribbon.png') no-repeat 0 0;
   position:relative;
   width: 450px;
   height: 70px;
