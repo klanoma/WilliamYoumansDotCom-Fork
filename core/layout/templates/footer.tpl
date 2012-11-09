@@ -17,7 +17,6 @@
             <a href="http://www.facebook.com/wyoumans" title="Follow me on Facebook" class="icon-facebook" target="_blank"></a>
             <a href="http://www.github.com/klanoma" title="Follow me on Github" class="icon-github" target="_blank"></a>
             <a href="http://www.last.fm/gotwilly" title="Follow me on Last.fm" class="icon-lastfm" target="_blank"></a>
-            <a href="http://www.twitter.com/klanoma" title="Follow me on Twitter" class="icon-twitter" target="_blank"></a>
             <a href="http://feeds.feedburner.com/williamyoumans" title="Follow us on RSS" class="icon-rss" target="_blank"></a>
           </div>
           <div class="span3 footer-right">
