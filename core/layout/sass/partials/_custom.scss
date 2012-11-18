@@ -1,5 +1,5 @@
 body {
-  background: $light-blue image-url('template/shade.jpg') repeat-x 0 0;
+  background: $light-blue image-url('../images/template/shade.jpg') repeat-x 0 0;
   color: $dark-blue;
   border-top: 1px solid $dark-blue;
   padding: 0;
@@ -59,7 +59,7 @@ h3 {
       width: 410px;
       margin: 100px auto 54px auto;
       padding: 15px 0 0 40px;
-      background-image: image-url('template/tea.png');
+      background-image: image-url('../images/template/tea.png');
       background-repeat: no-repeat;
       background-position: 0 5px;
       text-align: center;
@@ -130,7 +130,7 @@ ul.tools {
       *display:inline;
       height: 50px;
       width: 50px;
-      background: transparent image-url('home/tools.png') no-repeat 0 0;
+      background: transparent image-url('../images/home/tools.png') no-repeat 0 0;
       &.alfred {
         background-position: 0 -50px;
         &:hover {
@@ -295,7 +295,7 @@ ul.tools {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: transparent image-url('template/ribbon.png') no-repeat 0 0;
+  background: transparent image-url('../images/template/ribbon.png') no-repeat 0 0;
   position:relative;
   width: 450px;
   height: 70px;
