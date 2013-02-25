@@ -2651,7 +2651,6 @@ ul.tools li .icon.transmit { background-position: -850px -50px; }
 ul.tools li .icon.transmit:hover { background-position: -850px 0; }
 ul.tools li .icon:hover { text-decoration: none; }
 
-.distraction { min-height: 154px; height: auto !important; height: 154px; }
 .distraction img { padding-right: 10px; width: 100px; max-width: 100px; }
 .distraction table { margin-top: 5px; }
 
