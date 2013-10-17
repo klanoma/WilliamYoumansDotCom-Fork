@@ -10,26 +10,26 @@ $black: #000000;
 $font_path: "../../font/" !default;
 
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('#{$font_path}fontawesome-webfont.eot');
-    src: url('#{$font_path}fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-         url('#{$font_path}fontawesome-webfont.woff') format('woff'),
-         url('#{$font_path}fontawesome-webfont.ttf') format('truetype'),
-         url('#{$font_path}fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'),
-         url('#{$font_path}fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'FontAwesome';
+  src: url('#{$font_path}fontawesome-webfont.eot');
+  src: url('#{$font_path}fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_path}fontawesome-webfont.woff') format('woff'),
+       url('#{$font_path}fontawesome-webfont.ttf') format('truetype'),
+       url('#{$font_path}fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'),
+       url('#{$font_path}fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'BanksiaRegular';
-    src: url('#{$font_path}banksiaeot.eot');
-    src: url('#{$font_path}banksiaeot.eot?#iefix') format('embedded-opentype'),
-         url('#{$font_path}banksiawoff.woff') format('woff'),
-         url('#{$font_path}banksiattf.ttf') format('truetype'),
-         url('#{$font_path}banksiasvg.svg#FontAwesomeRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'BanksiaRegular';
+  src: url('#{$font_path}banksiaeot.eot');
+  src: url('#{$font_path}banksiaeot.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_path}banksiawoff.woff') format('woff'),
+       url('#{$font_path}banksiattf.ttf') format('truetype'),
+       url('#{$font_path}banksiasvg.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 $base-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
