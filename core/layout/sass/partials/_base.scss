@@ -6,28 +6,30 @@ $white: #FFFFFF;
 $transparent: rgba(0,0,0,0);
 $black: #000000;
 
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../../font/fontawesome-webfont.eot');
-  src: url('../../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../../font/fontawesome-webfont.woff') format('woff'),
-       url('../../font/fontawesome-webfont.ttf') format('truetype'),
-       url('../../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'),
-       url('../../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "compass/css3/font-face";
+$font_path: "../../font/" !default;
 
-@font-face {
-  font-family: 'BanksiaRegular';
-  src: url('../../font/banksiaeot.eot');
-  src: url('../../font/banksiaeot.eot?#iefix') format('embedded-opentype'),
-       url('../../font/banksiawoff.woff') format('woff'),
-       url('../../font/banksiattf.ttf') format('truetype'),
-       url('../../font/banksiasvg.svg#FontAwesomeRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@include font-face(
+  'FontAwesome',
+  font-files(
+    "#{$font_path}fontawesome-webfont.woff", woff,
+    "#{$font_path}fontawesome-webfont.ttf", truetype,
+    "#{$font_path}fontawesome-webfont.svgz#FontAwesomeRegular", svg,
+    "#{$font_path}fontawesome-webfont.svg#FontAwesomeRegular", svg),
+  '#{$font_path}fontawesome-webfont.eot',
+  normal,
+  normal
+);
+
+@include font-face(
+  "BanksiaRegular", font-files(
+    "#{$font_path}banksiawoff.woff", woff,
+    "#{$font_path}banksiattf.ttf", truetype,
+    "#{$font_path}banksiasvg.svg#BanksiaRegular", svg),
+  '#{$font_path}banksiaeot.eot',
+  normal,
+  normal
+);
 
 $base-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $header-family: 'BanksiaRegular', Helvetica, Arial, sans-serif;
