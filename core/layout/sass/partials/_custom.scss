@@ -4,6 +4,11 @@ body {
   border-top: 1px solid $dark-blue;
   padding: 0;
   margin: 0;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+
   &, label {
     font-weight: 300;
     font-size: 16px;
@@ -48,6 +53,7 @@ h3 {
   .brand-wrapper {
     clear:both;
     text-align: center;
+
     .brand {
       float: none;
       display: block;
@@ -121,9 +127,11 @@ h3 {
 }
 
 ul.tools {
+
   li {
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     margin-left: 10px;
+
     .icon {
       display:inline-block;
       zoom:1;
@@ -131,126 +139,166 @@ ul.tools {
       height: 50px;
       width: 50px;
       background: transparent image-url('../images/home/tools.png') no-repeat 0 0;
+
       &.alfred {
         background-position: 0 -50px;
+
         &:hover {
           background-position: 0 0;
         }
       }
+
       &.apache {
         background-position: -50px -50px;
+
         &:hover {
           background-position: -50px 0;
         }
       }
+
       &.chrome {
         background-position: -100px -50px;
+
         &:hover {
           background-position: -100px 0;
         }
       }
+
       &.espresso {
         background-position: -150px -50px;
+
         &:hover {
           background-position: -150px 0;
         }
       }
+
       &.git {
         background-position: -200px -50px;
+
         &:hover {
           background-position: -200px 0;
         }
       }
+
       &.haml {
         background-position: -250px -50px;
+
         &:hover {
           background-position: -250px 0;
         }
       }
+
       &.iterm {
         background-position: -300px -50px;
+
         &:hover {
           background-position: -300px 0;
         }
       }
+
       &.jquery {
         background-position: -350px -50px;
+
         &:hover {
           background-position: -350px 0;
         }
       }
+
       &.linux {
         background-position: -400px -50px;
+
         &:hover {
           background-position: -400px 0;
         }
       }
+
       &.macbook {
         background-position: -450px -50px;
+
         &:hover {
           background-position: -450px 0;
         }
       }
+
       &.mysql {
         background-position: -500px -50px;
+
         &:hover {
           background-position: -500px 0;
         }
       }
+
       &.nanoc {
         background-position: -550px -50px;
+
         &:hover {
           background-position: -550px 0;
         }
       }
+
       &.omnifocus {
         background-position: -600px -50px;
+
         &:hover {
           background-position: -600px 0;
         }
       }
+
       &.php {
         background-position: -650px -50px;
+
         &:hover {
           background-position: -650px 0;
         }
       }
+
       &.ruby {
         background-position: -700px -50px;
+
         &:hover {
           background-position: -700px 0;
         }
       }
+
       &.sass {
         background-position: -750px -50px;
+
         &:hover {
           background-position: -750px 0;
         }
       }
+
       &.sublime {
         background-position: -800px -50px;
+
         &:hover {
           background-position: -800px 0;
         }
       }
+
       &.transmit {
         background-position: -850px -50px;
+
         &:hover {
           background-position: -850px 0;
         }
       }
+
       &:hover {
         text-decoration: none;
       }
     }
   }
 }
+
 .distraction {
+
   img {
     padding-right: 10px;
     width: 100px;
     max-width: 100px;
   }
+
   table {
     margin-top: 5px;
   }
@@ -270,12 +318,14 @@ ul.tools {
 }
 
 .blog_comment_form {
+
   input[type=text], textarea {
     width: 500px;
   }
 }
 
 .blog_meta {
+
   a:hover {
     text-decoration: none;
   }
@@ -302,6 +352,7 @@ ul.tools {
     text-decoration: none;
     color: #501111;
   }
+
   a:hover {
     text-decoration: underline;
   }
