@@ -9,37 +9,28 @@ $black: #000000;
 @import "compass/css3/font-face";
 $font_path: "../../font/" !default;
 
-@include font-face(
-  'FontAwesome',
-  font-files(
-    "#{$font_path}fontawesome-webfont.woff", woff,
-    "#{$font_path}fontawesome-webfont.ttf", truetype,
-    "#{$font_path}fontawesome-webfont.otf", opentype,
-    "#{$font_path}fontawesome-webfont.svgz#FontAwesomeRegular", svg,
-    "#{$font_path}fontawesome-webfont.svg#FontAwesomeRegular", svg),
-  '#{$font_path}fontawesome-webfont.eot',
-  normal,
-  normal
-);
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('#{$font_path}fontawesome-webfont.eot');
+    src: url('#{$font_path}fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$font_path}fontawesome-webfont.woff') format('woff'),
+         url('#{$font_path}fontawesome-webfont.ttf') format('truetype'),
+         url('#{$font_path}fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'),
+         url('#{$font_path}fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-@include font-face(
-  "BanksiaBold",
-  font-files(
-    "#{$font_path}banksb20eot.eot", opentype,
-    "#{$font_path}banksb20woff.woff", woff,
-    "#{$font_path}banksb20ttf.ttf", truetype,
-    "#{$font_path}banksb20svg.svg#BanksiaBold", svg
-  )
-);
-
-@include font-face(
-  "BanksiaRegular", font-files(
-    "#{$font_path}banksiaeot.eot", opentype,
-    "#{$font_path}banksiawoff.woff", woff,
-    "#{$font_path}banksiattf.ttf", truetype,
-    "#{$font_path}banksiasvg.svg#BanksiaRegular", svg
-  )
-);
+@font-face {
+    font-family: 'BanksiaRegular';
+    src: url('#{$font_path}banksiaeot.eot');
+    src: url('#{$font_path}banksiaeot.eot?#iefix') format('embedded-opentype'),
+         url('#{$font_path}banksiawoff.woff') format('woff'),
+         url('#{$font_path}banksiattf.ttf') format('truetype'),
+         url('#{$font_path}banksiasvg.svg#FontAwesomeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 $base-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $header-family: 'BanksiaRegular', Helvetica, Arial, sans-serif;
