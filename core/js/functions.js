@@ -2,7 +2,7 @@
 jQuery('html').removeClass('no-js').addClass('js');
 
 // Add .osx class to html if on Os/x
-if ( navigator.appVersion.indexOf("Mac")!=-1 )
+if (navigator.appVersion.indexOf("Mac") != -1)
   jQuery('html').addClass('osx');
 
 /* Opera fix: */
@@ -23,11 +23,11 @@ jQuery(document).ready(function($) {
     // initialize popover
     $('[rel=popover]').popover();
 
-    $('.accordion').on('show', function (e) {
-       $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
+    $('.accordion').on('show', function(e) {
+      $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
     });
 
-    $('.accordion').on('hide', function (e) {
+    $('.accordion').on('hide', function(e) {
       $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
     });
 
@@ -37,20 +37,20 @@ jQuery(document).ready(function($) {
 
     $(window).load(function() {
 
-      $('.link').each(function(){
+      $('.link').each(function() {
         var $this = $(this);
         var $height = $this.find('img').height();
-        var span = $('<span>').addClass('link-overlay').html('&nbsp;').css('top',$height/2).click(function(){
+        var span = $('<span>').addClass('link-overlay').html('&nbsp;').css('top', $height / 2).click(function() {
           if (href = $this.find('a:first').attr('href')) {
-            top.location.href=href;
+            top.location.href = href;
           }
         });
         $this.append(span);
       })
-      $('.zoom').each(function(){
+      $('.zoom').each(function() {
         var $this = $(this);
         var $height = $this.find('img').height();
-        var span = $('<span>').addClass('zoom-overlay').html('&nbsp;').css('top',$height/2);
+        var span = $('<span>').addClass('zoom-overlay').html('&nbsp;').css('top', $height / 2);
         $this.find('a.thumbnail').append(span);
       })
 
@@ -59,38 +59,39 @@ jQuery(document).ready(function($) {
   })();
 
 
-/* --------------------------------------------------------
+  /* --------------------------------------------------------
   Portfolio
    -------------------------------------------------------- */
 
   (function() {
 
-    $(window).load(function(){
+    $(window).load(function() {
 
       // container
       var $container = $('#portfolio-items');
 
-      function filter_projects(tag)
-      {
+      function filter_projects(tag) {
         // filter projects
-        $container.isotope({ filter: tag });
+        $container.isotope({
+          filter: tag
+        });
         // clear active class
         $('li.active').removeClass('active');
         // add active class to filter selector
         $('#portfolio-filter').find("[data-filter='" + tag + "']").parent().addClass('active');
         // update location hash
-        if (tag!='*') {
-          window.location.hash=tag.replace('.','');
+        if (tag != '*') {
+          window.location.hash = tag.replace('.', '');
         }
-        if (tag=='*') {
-          window.location.hash='';
+        if (tag == '*') {
+          window.location.hash = '';
         }
       }
 
       if ($container.length) {
 
         // conver data-tags to classes
-        $('.project').each(function(){
+        $('.project').each(function() {
           $this = $(this);
           var tags = $this.data('tags');
           if (tags) {
@@ -103,21 +104,20 @@ jQuery(document).ready(function($) {
 
         // initialize isotope
         $container.isotope({
-          itemSelector : '.project',
-          layoutMode   : 'fitRows'
+          itemSelector: '.project',
+          layoutMode: 'fitRows'
         });
 
         // filter items
-        $('#portfolio-filter li a').click(function(){
+        $('#portfolio-filter li a').click(function() {
           var selector = $(this).attr('data-filter');
           filter_projects(selector);
           return false;
         });
 
         // filter tags if location.has is available. e.g. http://example.com/work.html#design will filter projects within this category
-        if (window.location.hash!='')
-        {
-          filter_projects( '.' + window.location.hash.replace('#','') );
+        if (window.location.hash != '') {
+          filter_projects('.' + window.location.hash.replace('#', ''));
         }
       }
     })
@@ -125,7 +125,7 @@ jQuery(document).ready(function($) {
   })();
 
 
-/* --------------------------------------------------------
+  /* --------------------------------------------------------
   Back to top button
    -------------------------------------------------------- */
 
@@ -135,7 +135,7 @@ jQuery(document).ready(function($) {
 
     $(window).scroll(function() {
 
-      if($(this).scrollTop() != 0) {
+      if ($(this).scrollTop() != 0) {
         $('#back-to-top').fadeIn();
       } else {
         $('#back-to-top').fadeOut();
@@ -144,7 +144,9 @@ jQuery(document).ready(function($) {
     });
 
     $('#back-to-top').click(function() {
-      $('body,html').animate({scrollTop:0},600);
+      $('body,html').animate({
+        scrollTop: 0
+      }, 600);
     });
 
   })();
